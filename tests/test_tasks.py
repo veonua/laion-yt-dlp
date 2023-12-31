@@ -1,9 +1,5 @@
 import unittest
 from tasks import download_audio, download_and_compress, setUp
-import unittest
-
-from tasks import download_audio, download_and_compress, setUp
-
 
 class TestMain(unittest.TestCase):
     def setUp(self) -> None:
