@@ -14,6 +14,10 @@ class TestMain(unittest.TestCase):
         res = download_and_compress("https://www.youtube.com/watch?v=XU7pW9yDFyE") # Makeup for Glamorous Evening Look
         self.assertEqual(res, "ok")
 
+    def test_long_video(self):
+        res = download_and_compress("https://www.youtube.com/watch?v=5hiPF558-vc")
+        self.assertEqual(res, "ok")
+
     @unittest.skip("play list is too long")
     def test_long_playlist(self):
         res = download_and_compress("https://www.youtube.com/embed/videoseries?list=UU_HnGIfMXED5wYK8ay1KRLQ&hl=fr_FR")
